@@ -37,6 +37,8 @@ class ViewControllerWithoutStoryBoard: UIViewController {
     private func applyStyle(to v: CocoaButton) {
         v.setTitle("Submit", for: .normal)
         v.backgroundColor = UIColor(displayP3Red: 49/255, green: 190/255, blue: 169/255, alpha: 1)
+        v.borderColor = UIColor.gray
+        v.borderWidth = 1
         v.shadowColor = UIColor(red: 94/255, green: 186/255, blue: 187/255, alpha: 0.6)
     }
 }

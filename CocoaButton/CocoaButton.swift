@@ -16,6 +16,43 @@ public class CocoaButton: UIButton {
     }
     
     /**
+    * Sets button border
+    */
+    
+    @IBInspectable
+    open var borderColor: UIColor? {
+           set {
+               guard let uiColor = newValue else { return }
+               layer.borderColor = uiColor.cgColor
+           }
+           get {
+               guard let color = layer.borderColor else { return nil }
+               return UIColor(cgColor: color)
+           }
+       }
+    
+    @IBInspectable
+    open var borderWidth:CGFloat {
+        set {
+            layer.borderWidth = newValue
+        }
+
+        get {
+            return layer.borderWidth
+        }
+    }
+    @IBInspectable
+    open var cornerRadius:CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
+    }
+    
+    /**
     * Sets button shadow
     */
     @IBInspectable
