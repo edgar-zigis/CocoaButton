@@ -16,7 +16,7 @@ github "edgar-zigis/CocoaButton" ~> 1.0.0
 pod 'CocoaButton', '~> 1.0.0'
 ```
 ### Usage
-```
+```swift
 let v = CocoaButton()
 v.backgroundColor = UIColor(displayP3Red: 49/255, green: 190/255, blue: 169/255, alpha: 1)
 v.shadowColor = UIColor(red: 94/255, green: 186/255, blue: 187/255, alpha: 0.6)
