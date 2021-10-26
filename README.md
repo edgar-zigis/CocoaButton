@@ -24,4 +24,4 @@ v.startLoading() //  -> starts loader
 v.stopLoading() //  -> stops loader
 ```
 ### Remarks
-It can be used both programmatically and with storyboards. It has all the features of the UIButton. Samples are available at CocoaButtonTest
+It can be used both programmatically and with storyboards. It has all the features of the UIButton. Samples are available at **CocoaButtonTest**
